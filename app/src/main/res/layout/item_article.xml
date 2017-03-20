@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/roundcorner"
+    android:layout_margin="2dp"
+    >
+
+    <com.codepath.nytreader.views.DynamicHeightImageView
+        android:id="@+id/ivImage"
+        android:layout_height="75dp"
+        android:layout_width="75dp"
+        android:layout_margin="5dp"
+        android:scaleType="fitCenter"        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvDesk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@color/colorPrimaryDark"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="4dp"
+            android:textColor="@color/color_white"
+            tools:text="News" />
+
+        <TextView
+            android:id="@+id/tvPubDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            tools:text="20170101"
+            android:layout_alignBaseline="@+id/tvDesk"
+            android:layout_alignBottom="@+id/tvDesk"
+            android:layout_toRightOf="@+id/tvDesk"
+            android:layout_toEndOf="@+id/tvDesk"
+            android:textStyle="italic"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="4"
+        android:ellipsize="end"
+        tools:text="Title"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"/>
+</LinearLayout>

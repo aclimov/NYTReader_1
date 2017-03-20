@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">NYTReader</string>
+    <string name="action_settings">Settings</string>
+    <string name="etQuery_hint">enter search query</string>
+    <string name="btnSearch_text">Search</string>
+    <string name="cbArtsText">Arts</string>
+
+    <string name="cbSportsText">Sports</string>
+
+    <string name="tvStartDateText">Start Date</string>
+    <string name="tvSortOrderText">Sort Order</string>
+    <string name="tvDescValuesText">Desc Values</string>
+    <string name="cbFashionText"><![CDATA[Fashion & Style]]></string>
+    <string name="order_prompt">Choose an order</string>
+    <string-array name="order_values">
+        <item>Newest</item>
+        <item>Oldest</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tvOkText">Ok</string>
+    <string name="tvCancelText">Cancel</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+</resources>

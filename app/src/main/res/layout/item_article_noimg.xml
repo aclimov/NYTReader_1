@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:background="@drawable/roundcorner"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="2dp" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvDesk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@color/colorPrimaryDark"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="4dp"
+            android:textColor="@color/color_white"
+            tools:text="News" />
+
+        <TextView
+            android:id="@+id/tvPubDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            tools:text="20170101"
+            android:layout_alignBaseline="@+id/tvDesk"
+            android:layout_alignBottom="@+id/tvDesk"
+            android:layout_toRightOf="@+id/tvDesk"
+            android:layout_toEndOf="@+id/tvDesk"
+            android:textStyle="italic"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvHeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="8"
+        android:ellipsize="end"
+        tools:text="Title"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"/>
+</LinearLayout>

@@ -1,0 +1,122 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codepath.nytreader.dialogs.SettingsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/settings_control_margin_left"
+            android:layout_marginStart="@dimen/settings_control_margin_left"
+            android:layout_marginTop="@dimen/settings_control_margin_top"
+            android:text="@string/tvStartDateText" />
+
+        <EditText
+            android:id="@+id/etStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/settings_control_margin_top"
+            android:layout_marginTop="@dimen/settings_control_margin_top2"
+            android:layout_toRightOf="@+id/tvDate"
+            android:ems="10"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/tvSortOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvDate"
+            android:layout_alignStart="@+id/tvDate"
+            android:layout_below="@+id/tvDate"
+            android:layout_marginTop="@dimen/settings_control_margin_top4"
+            android:text="@string/tvSortOrderText" />
+
+        <Spinner
+            android:id="@+id/spOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etStartDate"
+            android:layout_alignStart="@+id/etStartDate"
+            android:layout_below="@id/etStartDate"
+            android:layout_marginRight="@dimen/settings_control_margin_top3"
+            android:layout_marginTop="@dimen/settings_control_margin_top3"
+            android:layout_toRightOf="@+id/tvSortOrder"
+            android:entries="@array/order_values"
+            android:prompt="@string/order_prompt"></Spinner>
+
+        <TextView
+            android:id="@+id/tvNewsDeskValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvDate"
+            android:layout_alignStart="@+id/tvDate"
+            android:layout_below="@+id/tvSortOrder"
+            android:layout_marginTop="@dimen/settings_control_margin_top4"
+            android:text="@string/tvDescValuesText" />
+
+        <CheckBox
+            android:id="@+id/cbArts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etStartDate"
+            android:layout_alignStart="@+id/etStartDate"
+            android:layout_below="@+id/spOrder"
+            android:layout_marginTop="52dp"
+            android:text="@string/cbArtsText" />
+
+        <CheckBox
+            android:id="@+id/cbFashion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etStartDate"
+            android:layout_alignStart="@+id/etStartDate"
+            android:layout_below="@+id/cbArts"
+            android:layout_marginTop="20dp"
+            android:text="@string/cbFashionText" />
+
+        <CheckBox
+            android:id="@+id/cbSport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etStartDate"
+            android:layout_alignStart="@+id/etStartDate"
+            android:layout_below="@+id/cbFashion"
+            android:layout_marginTop="20dp"
+            android:text="@string/cbSportsText" />
+
+
+        <TextView
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbSport"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/settings_cb_margin_top2"
+            android:layout_marginBottom="@dimen/settings_cb_margin_top2"
+
+            android:text="CANCEL" />
+
+        <TextView
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnCancel"
+            android:layout_alignBottom="@+id/btnCancel"
+            android:layout_toRightOf="@+id/btnCancel"
+            android:layout_marginLeft="15dp"
+            android:text="OK" />
+
+    </RelativeLayout>
+
+</FrameLayout>
